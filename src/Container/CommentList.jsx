@@ -9,7 +9,7 @@ const CommentList = ({ comments, addReply, level = 0 }) => {
           {level > 0 && (
             <div
               style={{ left: level * 30 - 25 + "px" }}
-              className="absolute top-0 h-full border border-white"
+              className="absolute top-0 h-full w-4 border-l-2 border-b-2 rounded-bl-lg m-2  border-white"
             ></div>
           )}
 
