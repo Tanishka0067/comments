@@ -12,7 +12,12 @@ const CommentList = ({ comments, addReply, level = 0 }) => {
               className="absolute -top-4 h-full min-w-4 z-0   border-l border-b rounded-bl-lg mx-1  border-white"
             ></div>
           )}
-
+    {level === 0 && (
+            <div
+              style={{ left: level * 30 - 20 + "px" }}
+              className="absolute -top-8 h-full min-w-4 z-0   border-l border-b rounded-bl-lg mx-1  border-white"
+            ></div>
+          )}
          
           <Comments 
             comment={comment} 
