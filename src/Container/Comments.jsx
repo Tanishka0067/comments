@@ -6,15 +6,15 @@ const Comments = ({ comment, addReply, level }) => {
   const [showReplyBox, setShowReplyBox] = useState(false);
 
   return (
-    <div style={{ marginLeft: level * 30 + "px" }} className="mt-4 bg-gray-900 text-white p-2 rounded-lg w-fit ">
-      <div>
+    <div style={{ marginLeft: level * 30 + "px" }} className="mt-4 border mx-auto bg-black text-white p-2 rounded-lg w-fit ">
+      <div className="flex flex-row gap-4">
         <p>{comment.content}</p>
         <button onClick={() => setShowReplyBox(!showReplyBox)}> <Reply />  </button>
       </div>
       {showReplyBox && (
         <div className="flex flex-row items-center ">
           <input
-          className="p-1 rounded-lg text-black"
+          className="p-1 rounded-lg text-black px-4"
             type="text"
             value={replyText}
             onChange={(e) => setReplyText(e.target.value)}
@@ -28,7 +28,7 @@ const Comments = ({ comment, addReply, level }) => {
               setReplyText("");
               setShowReplyBox(false);
             }}
-            className="p-2 m-2 bg-gray-400 rounded-full text-white">
+            className="p-2 m-2 bg-black border border-white rounded-full text-white">
             <SendHorizontal />
           </button>
         </div>

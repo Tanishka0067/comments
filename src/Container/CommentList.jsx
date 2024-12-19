@@ -5,11 +5,11 @@ const CommentList = ({ comments, addReply, level = 0 }) => {
   return (
     <div className="relative">
       {comments.map((comment) => (
-        <div key={comment.id} className="relative">
+        <div key={comment.id} >
           {level > 0 && (
             <div
-              style={{ left: level * 30 - 25 + "px" }}
-              className="absolute top-0 h-full w-4 border-l-2 border-b-2 rounded-bl-lg m-2  border-white"
+              style={{ left: level * 30 - 20 + "px" }}
+              className="absolute -top-4 h-full min-w-4 w-max  border-l border-b rounded-bl-lg mx-1  border-white"
             ></div>
           )}
 

@@ -69,11 +69,11 @@ const CommentSection = () => {
           value={newCommentText}
           onChange={(e) => setNewCommentText(e.target.value)}
           placeholder="Write a new comment..."
-          className="p-1 rounded-lg"
+          className="p-1 rounded-lg px-4"
         />
         <button
           onClick={addNewComment}
-          className="p-2 m-2 bg-gray-400 rounded-full text-white"
+          className="p-2 m-2 bg-black border-white border rounded-full text-white"
         >
           <SendHorizontal />
         </button>

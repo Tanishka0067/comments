@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-    <div className='bg-gray-500 rounded-lg p-5 w-5/6 mx-auto mt-8 '>
+    <div className='bg-black rounded-lg p-12 h-screen w-full mx-auto '>
      <h1 className='text-white text-xl font-bold font-mono'>Comment Section</h1>
     <CommentSection /></div>
     </>
