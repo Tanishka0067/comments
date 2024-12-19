@@ -9,7 +9,7 @@ const Comments = ({ comment, addReply, level }) => {
 
   return (
     <div style={{ marginLeft: level * 30 + "px" }} className="mt-4  border mx-auto bg-black text-white p-2 rounded-lg w-fit ">
-      <div className="flex flex-row justify-between bg-black items-center gap-12 z-50">
+      <div className="flex flex-row justify-between bg-black items-center md:gap-12 z-50 flex-wrap">
       <div className="flex flex-row gap-4 bg-black  z-50">
         <p>{comment.content}</p>
         <button onClick={() => setShowReplyBox(!showReplyBox)}> <Reply />  </button>
