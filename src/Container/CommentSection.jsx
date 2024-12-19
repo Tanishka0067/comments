@@ -64,12 +64,12 @@ const CommentSection = () => {
 
   return (
     <div className="p-3">
-      <div className="flex flex-row items-center ">
+      <div className="flex flex-row items-center gap-8 ">
         <input
           value={newCommentText}
           onChange={(e) => setNewCommentText(e.target.value)}
           placeholder="Write a new comment..."
-          className="p-1 rounded-lg px-8 -mx-6"
+          className="p-1 rounded-lg px-8 -mx-2"
         />
         <button
           onClick={addNewComment}
